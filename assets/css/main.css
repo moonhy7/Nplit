@@ -926,7 +926,7 @@ ol {
   position: relative;
   padding-bottom: 45px;
   padding-top: 140px;
-  background: #081828;
+  background: #926a9d;
   z-index: 2;
   text-align: left;
 }
@@ -934,6 +934,16 @@ ol {
 .breadcrumbs .breadcrumbs-content {
   position: relative;
   text-align: left;
+}
+.content .content-top {
+  /* border-top: 1px solid #cfb4cb; */
+
+  padding-top: 2rem;
+}
+.content p {
+  color: #fff;
+  font-size: 0.8rem;
+  padding-top: 2rem;
 }
 
 .breadcrumbs .breadcrumbs-content .page-title {
@@ -8224,6 +8234,10 @@ blockquote .shape {
   margin-bottom: 40px;
 }
 
+.content .footer-social li a i {
+  font-size: 30px;
+}
+
 /*======================================
 	Mail Success CSS
 ========================================*/
@@ -8444,12 +8458,12 @@ blockquote .shape {
 	Footer CSS
 ========================================*/
 .footer {
-  background: #926a9d;
+  background: #926b9e;
 }
 
 .footer .footer-top {
-  padding: 100px 0;
-  padding-top: 70px;
+  padding: 50px 0;
+  padding-top: 50px;
   border-bottom: 1px solid #ebebeb s;
 }
 
@@ -8544,10 +8558,9 @@ blockquote .shape {
   z-index: 1;
 }
 
-.footer .footer-bottom .inner {
-  border-top: 1px solid #ebebeb4f;
+/* .footer .footer-bottom .inner {
   padding: 50px 0;
-}
+} */
 
 .footer .footer-bottom .footer-bottom-links li {
   display: inline-block;
@@ -8557,7 +8570,7 @@ blockquote .shape {
 }
 
 .footer .footer-bottom .footer-bottom-links li::before {
-  position: absolute;
+  /* position: absolute; */
   content: "";
   right: -3px;
   top: 50%;
@@ -8612,19 +8625,19 @@ blockquote .shape {
 }
 
 .footer .footer-bottom .footer-social li a {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
+  height: 60px;
+  width: 60px;
+  line-height: 70px;
   text-align: center;
   display: block;
   border-radius: 50%;
   color: #fff;
   background: transparent;
-  border: 1px solid #eee3;
+  border: 2px solid #eee3;
 }
 
 .footer .footer-bottom .footer-social li a:hover {
   color: #fff;
-  background: #926a9d;
+  background: #cfb4cb;
   border-color: transparent;
 }
