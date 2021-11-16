@@ -28,24 +28,24 @@
 
 <!-- style 추가-->
 <style>
-
-
-
-    
     .form-group   .btn, .form-group .btn2{
-       background-color: #926a9d;
+        background-color: #926a9d;
            color: white;
            width:25%;
            min-height: 50px;
            padding: 0px;
-           float:right;
            font-size: 100%;
            border: none;
+           display: inline-block;
+            text-transform: capitalize;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            border-radius: 4px;
+            float: right;
        }
 
        .button .btn2:hover {
             background-color: red;
-           
         }
    </style>
 
@@ -215,7 +215,7 @@
                                     <img src="C:\Nplit\assets\images\profile\pro2.png" alt="#" 
                                     style="height:70%; width:50%; margin-left: auto; margin-right: auto; margin-bottom:30px; display: block;">
                                 </div>
-                                <form class="profile-setting-form" method="post" action="#">
+                                <form class="profile-setting-form" method="post" action="#" onsubmit="return false;">
                                     <div class="row">
                                         <div class="col-lg-6 col-12">
                                             <div class="form-group button mb-0">
@@ -282,10 +282,9 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group button mb-0">
-                                                <button type="submit" class="btn ">수정</button>
+                                                <button type="submit" class="btn" onclick="editchk()">수정</button>
                                             </div>
                                         </div>
-                                      
                                     </div>
                                 </form>
                             </div>
@@ -297,7 +296,7 @@
                         <div class="dashboard-block password-change-block">
                             <h3 class="block-title">비밀번호 변경</h3>
                             <div class="inner-block">
-                                <form class="default-form-style" method="post" action="#">
+                                <form class="default-form-style" method="post" action="#" onsubmit="return false;">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="form-group">
@@ -322,7 +321,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group button mb-0">
-                                                <button type="submit" class="btn ">비밀번호 변경</button>
+                                                <button type="submit" class="btn " onclick="change_pwd_chk()">비밀번호 변경</button>
                                             </div>
                                         </div>
                                     </div>
@@ -481,25 +480,43 @@
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-
+    
+    
     <script type="text/javascript">
 
-        function delchk(){
+        function editchk(){
         
-            if(confirm("N플릿 계정을 삭제하시겠습니까?")){
+            if(confirm("계정 정보를 수정하시겠습니까?")){
         
-                location.href = "index.html";
-        
+                location.href = "edit-success.html";
                 return true;
-        
             } else {
-        
                 return false;
-        
             }
-        
         }
         
+        function change_pwd_chk(){
+            
+            if(confirm("비밀번호를 변경하시겠습니까?")){
+        
+                location.href = "pwdchange-success.html";
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+        function delchk(){
+        
+        if(confirm("N플릿 계정을 삭제하시겠습니까?")){
+    
+            location.href = "delete-success.html";
+            return true;
+        } else {
+            return false;
+        }
+        }
+
         </script>
 
 
