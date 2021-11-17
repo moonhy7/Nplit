@@ -85,6 +85,70 @@ button:focus,
   border-color: #926a9d;
 }
 
+/*유미*/
+
+a.chat-button {
+  width: 150px;
+}
+.fold_btn {
+  width: 100px;
+  height: 25px;
+  color: #926a9d;
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #926a9d;
+  transition: 0.5s;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: center;
+  line-height: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  float: right;
+  margin-right: 4rem;
+  /* border-top: none; */
+}
+.detaile-button {
+  float: right;
+}
+.fold {
+  margin-top: -30px;
+}
+
+#add_bt {
+  display: none;
+}
+.hide_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 100px 0 20px;
+}
+.hide {
+  display: none;
+  overflow: hidden;
+  transition: all 0.7s linear;
+}
+#detaile_content {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+#add_bt:checked ~ .hide {
+  display: block;
+  transition: all 0.7s linear;
+}
+.fold_btn::before {
+  content: "더보기";
+}
+
+#add_bt:checked + label::before {
+  /* margin-top: -10px; */
+  content: "접기";
+}
+/*end 유미*/
+
 select {
   -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
