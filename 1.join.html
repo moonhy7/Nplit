@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Pricing Table - ClassiGrids Classified Ads and Listing Website Template</title>
+    <title>Registration - ClassiGrids Classified Ads and Listing Website Template</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
@@ -23,7 +23,20 @@
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-
+<!-- style 추가-->
+    <style>
+        
+    
+     .form-group   .btn{
+        background-color: #926a9d;
+            color: white;
+            width:25%;
+            min-height: 56px;
+            padding: 0px;
+            float:right;
+            font-size: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -132,13 +145,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="breadcrumbs-content">
-                        <h1 class="page-title">Pricing Table</h1>
+                        <h1 class="page-title">Registration</h1>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <ul class="breadcrumb-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li>Pricing</li>
+                        <li>Registration</li>
                     </ul>
                 </div>
             </div>
@@ -146,110 +159,95 @@
     </div>
     <!-- End Breadcrumbs -->
 
-    <!-- Start Pricing Table Area -->
-    <section class="pricing-table section">
+    <!--수정 (예진) 회원 가입 부분 수정 -->
+    <!-- start Registration section -->
+    <section class="login registration section">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Pricing Plan</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".2s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <div class="price">
-                                <h2 class="amount">$00<span class="duration">/ Month</span></h2>
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                    <div class="form-head">
+                        <h4 class="title">회원가입</h4>
+                        <form action="#!" method="post">
+                            
+                            <div class="form-group">
+                                <label>이름</label>
+                                <input name="Name" type="text">
                             </div>
-                            <h4 class="title">Free</h4>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Table List -->
-                        <ul class="table-list">
-                            <li>One Listing</li>
-                            <li>Contact Display</li>
-                            <li>Image Gallery</li>
-                            <li>30 Days Availablity</li>
-                            <li>Non-Featured</li>
-                            <li>Business Tagline</li>
-                        </ul>
-                        <!-- End Table List -->
-                        <!-- Table Bottom -->
-                        <div class="button">
-                            <a class="btn" href="javascript:void(0)">Select Plan</a>
-                        </div>
-                        <!-- End Table Bottom -->
-                    </div>
-                    <!-- End Single Table-->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".4s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <div class="price">
-                                <h2 class="amount">$59<span class="duration">/ Month</span></h2>
+                            <!-- 수정 : 아이디 / 중복확인 버튼 추가 / 입력창 사이즈 조정-->
+                            <div class="form-group">
+                                <label>아이디</label>
+                                <input name="userId" type="text" style="width: 70%;">
+                              <button class = "btn" type="button" >중복확인</button>
                             </div>
-                            <h4 class="title">Standard</h4>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Table List -->
-                        <ul class="table-list">
-                            <li>One Listing</li>
-                            <li>Contact Display</li>
-                            <li>Image Gallery</li>
-                            <li>60 Days Availablity</li>
-                            <li>Non-Featured</li>
-                            <li>Business Tagline</li>
-                        </ul>
-                        <!-- End Table List -->
-                        <!-- Table Bottom -->
-                        <div class="button">
-                            <a class="btn" href="javascript:void(0)">Select Plan</a>
-                        </div>
-                        <!-- End Table Bottom -->
-                    </div>
-                    <!-- End Single Table-->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".6s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <div class="price">
-                                <h2 class="amount">$99<span class="duration">/ Month</span></h2>
+                            <div class="form-group">
+                                <label>비밀번호</label>
+                                <input name="password" type="password">
                             </div>
-                            <h4 class="title">Premium</h4>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Table List -->
-                        <ul class="table-list">
-                            <li>One Listing</li>
-                            <li>Contact Display</li>
-                            <li>Image Gallery</li>
-                            <li>90 Days Availablity</li>
-                            <li>Non-Featured</li>
-                            <li>Business Tagline</li>
-                        </ul>
-                        <!-- End Table List -->
-                        <!-- Table Bottom -->
-                        <div class="button">
-                            <a class="btn" href="javascript:void(0)">Select Plan</a>
-                        </div>
-                        <!-- End Table Bottom -->
+                            <div class="form-group">
+                                <label>비밀번호 확인</label>
+                                <input name="password" type="password">
+                            </div>
+                            <!--수정 : 닉네임 / 중복확인 버튼 추가 / 입력창 사이즈 조정 -->
+                            <div class="form-group">
+                                <label>닉네임</label>
+                                <input name="NickName" type="text" style="width: 70%;">
+                                <button class = "btn" type="button">중복확인</button>
+                            </div>
+
+                            <div class="form-group">
+                                <label>이메일</label>
+                                <input name="email" type="email">
+                            </div>
+                            <!--휴대폰 번호 / 번호인증 버튼 추가 / 입력창 사이즈 조정-->
+                            <div class="form-group">
+                                <label>휴대폰 번호</label>
+                                <input name="PhoneNum" type="text" style="width: 70%;">
+                                <button class = "btn" type="button">인증하기</button>
+                            </div>
+                              <!-- 주소 / 중복확인 버튼 수정 /입력창 사이즈 조정-->  
+                            <div class="form-group">
+                                <label>주소</label>
+                                <input name="address" type="text" style="width: 70%;">
+                                <button class = "btn" type="button">주소검색</button>
+                            </div>
+
+                            <div class="check-and-pass">
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input width-auto"
+                                                id="exampleCheck1">
+                                            <label class="form-check-label">Agree to our <a href="javascript:void(0)">Terms and
+                                                    Conditions</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button type="submit" class="btn" style="background-color: #926a9d;" >회원가입</button>
+                            </div>
+                            <div class="alt-option">
+                                <span>Or</span>
+                            </div>
+                            <div class="socila-login">
+                                <ul>
+                                    <li><a href="javascript:void(0)" class="facebook"><i class="lni lni-facebook-original"></i>Import
+                                            From Facebook</a></li>
+                                    <li><a href="javascript:void(0)" class="google"><i class="lni lni-google"></i>Import From Google
+                                            Plus</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <p class="outer-link">이미 아이디가 있나요? <a href="login.html"> 로그인 하기</a>
+                            </p>
+                        </form>
                     </div>
-                    <!-- End Single Table-->
                 </div>
             </div>
         </div>
     </section>
-    <!--/ End Pricing Table Area -->
+    <!-- End Registration section -->
 
     <!-- Start Newsletter Area -->
     <div class="newsletter section">
