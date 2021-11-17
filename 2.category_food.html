@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Category - ClassiGrids Classified Ads and Listing Website Template</title>
+    <title>Ad Listing Grid - ClassiGrids Classified Ads and Listing Website Template</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
@@ -132,13 +132,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="breadcrumbs-content">
-                        <h1 class="page-title">Category</h1>
+                        <h1 class="page-title">배달음식 목록</h1>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <ul class="breadcrumb-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li>category</li>
+                        <li>카테고리</li>
+                        <li><a href="item-listing-food.html">배달음식</a></li>
                     </ul>
                 </div>
             </div>
@@ -146,7 +147,7 @@
     </div>
     <!-- End Breadcrumbs -->
 
-    <!-- Start Category -->
+    <!-- Start Items Listing Grid -->
     <section class="category-page section">
         <div class="container">
             <div class="row">
@@ -154,81 +155,56 @@
                     <div class="category-sidebar">
                         <!-- Start Single Widget -->
                         <div class="single-widget search">
-                            <h3>Search Ads</h3>
+                            <h3>검색</h3>
                             <form action="#">
-                                <input type="text" placeholder="Search Here...">
+                                <input type="text" placeholder="제품명">
                                 <button type="submit"><i class="lni lni-search-alt"></i></button>
                             </form>
                         </div>
                         <!-- End Single Widget -->
                         <!-- Start Single Widget -->
                         <div class="single-widget">
-                            <h3>All Categories</h3>
+                            <h3>카테고리</h3>
                             <ul class="list">
                                 <li>
-                                    <a href="javascript:void(0)"><i class="lni lni-dinner"></i> Hotel & Travels<span>15</span></a>
+                                    <a href="item-listing-food.html">배달음식<span>26</span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><i class="lni lni-control-panel"></i> Services <span>20</span></a>
+                                    <a href="item-listing-food.html)">구독서비스<span>30</span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><i class="lni lni-bullhorn"></i> Marketing <span>55</span></a>
+                                    <a href="item-listing-food.html">홈 쉐어링<span>71</span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><i class="lni lni-home"></i> Real Estate<span>35</span></a>
+                                    <a href="item-listing-food.html">패션/잡화<span>56</span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><i class="lni lni-bolt"></i> Electronics <span>60</span></a>
+                                    <a href="item-listing-food.html">라이프<span>15</span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><i class="lni lni-tshirt"></i> Dress & Clothing <span>55</span></a>
+                                    <a href="item-listing-food.html">가전/디지털<span>12</span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><i class="lni lni-diamond-alt"></i> Jewelry & Accessories
-                                        <span>45</span></a>
+                                    <a href="item-listing-food.html">기타<span>17</span></a>
                                 </li>
                             </ul>
                         </div>
                         <!-- End Single Widget -->
                         <!-- Start Single Widget -->
                         <div class="single-widget range">
-                            <h3>Price Range</h3>
-                            <input type="range" class="form-range" name="range" step="1" min="100" max="10000"
+                            <h3>거리순(m)</h3>
+                            <input type="range" class="form-range" name="range" step="1" min="100" max="5000"
                                 value="10" onchange="rangePrimary.value=value">
                             <div class="range-inner">
-                                <label>$</label>
-                                <input type="text" id="rangePrimary" placeholder="100" />
-                            </div>
-                        </div>
-                        <!-- End Single Widget -->
-                        <!-- Start Single Widget -->
-                        <div class="single-widget condition">
-                            <h3>Condition</h3>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                                <label class="form-check-label" for="flexCheckDefault1">
-                                    All
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                <label class="form-check-label" for="flexCheckDefault2">
-                                    New
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                <label class="form-check-label" for="flexCheckDefault3">
-                                    Used
-                                </label>
+                                <input type="text" id="rangePrimary" placeholder="100"/>
                             </div>
                         </div>
                         <!-- End Single Widget -->
                         <!-- Start Single Widget -->
                         <div class="single-widget banner">
                             <h3>Advertisement</h3>
-                            <a href="javascript:void(0)">
-                                <img src="https://via.placeholder.com/780x1300" alt="#">
+                            <a href="https://www.donga-otsuka.co.kr/sub2/sub1_2.asp">
+                                <img src="../nplit/assets/images/items/ad.jpg" alt="#">
                             </a>
                         </div>
                         <!-- End Single Widget -->
@@ -241,7 +217,7 @@
                                 <div class="category-grid-topbar">
                                     <div class="row align-items-center">
                                         <div class="col-lg-6 col-md-6 col-12">
-                                            <h3 class="title">Showing 1-12 of 21 ads found</h3>
+                                            <h3 class="title">배달음식 9개의 검색결과</h3>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <nav>
@@ -267,19 +243,46 @@
                                                 <!-- Start Single Item -->
                                                 <div class="single-item-grid">
                                                     <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/kyochon.jpg" alt="#"></a>
                                                         <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge sale">Sale</span>
+                                                        <span class="flat-badge sale">선착순 2명</span>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Mobile</a>
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
                                                         <h3 class="title">
-                                                            <a href="item-details.html">Apple Iphone X</a>
+                                                            <a href="item-details.html">교촌치킨</a>
                                                         </h3>
+                                                        <p style="color:black;">교촌치킨 배달 같이 시키실분 구합니당~~</p>
                                                         <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>Boston</a></p>
+                                                                </i>경기도 수원시</a></p>
                                                         <ul class="info">
-                                                            <li class="price">$890.00</li>
+                                                            <li class="price">20,000원 ~ 30,000원</li>
+                                                            <li class="like"><a href="javascript:void(0)"><i
+                                                                        class="lni lni-heart"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- End Single Item -->
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-12">
+                                                <!-- Start Single Item -->
+                                                <div class="single-item-grid">
+                                                    <div class="image"
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/moms_touch.jpg" alt="#"></a>
+                                                        <i class=" cross-badge lni lni-bolt"></i>
+                                                        <span class="flat-badge sale">선착순 3명</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
+                                                        <h3 class="title">
+                                                            <a href="item-details.html">맘스터치</a>
+                                                        </h3>
+                                                        <p style="color:black;">맘스터치 단품으로 주문하실분~!~!</p>
+                                                        <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
+                                                                </i>서울특별시 강동구</a></p>
+                                                        <ul class="info">
+                                                            <li class="price">10,000 ~ 15,000원</li>
                                                             <li class="like"><a href="javascript:void(0)"><i
                                                                         class="lni lni-heart"></i></a>
                                                             </li>
@@ -292,19 +295,20 @@
                                                 <!-- Start Single Item -->
                                                 <div class="single-item-grid">
                                                     <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/dduk.png" alt="#"></a>
                                                         <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge sale">Sale</span>
+                                                        <span class="flat-badge sale">선착순 2명</span>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Others</a>
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
                                                         <h3 class="title">
-                                                            <a href="item-details.html">Travel Kit</a>
+                                                            <a href="item-details.html">엽기떡볶이</a>
                                                         </h3>
+                                                        <p style="color:black;">안양일번가 근처 엽기떡볶이 배달 시키실분</p>
                                                         <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>San Francisco</a></p>
+                                                                </i>경기도 안양시</a></p>
                                                         <ul class="info">
-                                                            <li class="price">$580.00</li>
+                                                            <li class="price">14,000 ~ 19,000원</li>
                                                             <li class="like"><a href="javascript:void(0)"><i
                                                                         class="lni lni-heart"></i></a>
                                                             </li>
@@ -317,19 +321,20 @@
                                                 <!-- Start Single Item -->
                                                 <div class="single-item-grid">
                                                     <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/bon.jpg" alt="#"></a>
                                                         <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge sale">Sale</span>
+                                                        <span class="flat-badge rent">4명 남음</span>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Electronic</a>
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
                                                         <h3 class="title">
-                                                            <a href="item-details.html">Nikon DSLR Camera</a>
+                                                            <a href="item-details.html">본죽</a>
                                                         </h3>
+                                                        <p style="color:black;">용산역 근처 본죽 배달해서 드실분?</p>
                                                         <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>Alaska, USA</a></p>
+                                                                </i>서울특별시 용산구</a></p>
                                                         <ul class="info">
-                                                            <li class="price">$560.00</li>
+                                                            <li class="price">11,000원 ~ 17,000원</li>
                                                             <li class="like"><a href="javascript:void(0)"><i
                                                                         class="lni lni-heart"></i></a>
                                                             </li>
@@ -342,19 +347,20 @@
                                                 <!-- Start Single Item -->
                                                 <div class="single-item-grid">
                                                     <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/bhc.jpg" alt="#"></a>
                                                         <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge sale">Sale</span>
+                                                        <span class="flat-badge rent">4명 남음</span>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Furniture</a>
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
                                                         <h3 class="title">
-                                                            <a href="item-details.html">Poster Paint</a>
+                                                            <a href="item-details.html">BHC 치킨</a>
                                                         </h3>
+                                                        <p style="color:black;">치킨 시키는데 배달료 아까우신분?? 들오셈</p>
                                                         <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>Las Vegas</a></p>
+                                                                </i>경기도 안산시</a></p>
                                                         <ul class="info">
-                                                            <li class="price">$85.00</li>
+                                                            <li class="price">20,000원 ~ 25,000원</li>
                                                             <li class="like"><a href="javascript:void(0)"><i
                                                                         class="lni lni-heart"></i></a>
                                                             </li>
@@ -367,19 +373,20 @@
                                                 <!-- Start Single Item -->
                                                 <div class="single-item-grid">
                                                     <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/hongkong.png" alt="#"></a>
                                                         <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge sale">Sale</span>
+                                                        <span class="flat-badge sale">선착순 2명</span>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Furniture</a>
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
                                                         <h3 class="title">
-                                                            <a href="item-details.html">Official Metting Chair</a>
+                                                            <a href="item-details.html">홍콩반점</a>
                                                         </h3>
+                                                        <p style="color:black;">부평 근처 짜장면 같이 시킬분 구합니닷ㅎㅎ</p>
                                                         <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>Alaska, USA</a></p>
+                                                                </i>인천광역시 부평구</a></p>
                                                         <ul class="info">
-                                                            <li class="price">$750.00</li>
+                                                            <li class="price">8,000원 ~ 13,000원</li>
                                                             <li class="like"><a href="javascript:void(0)"><i
                                                                         class="lni lni-heart"></i></a>
                                                             </li>
@@ -392,44 +399,20 @@
                                                 <!-- Start Single Item -->
                                                 <div class="single-item-grid">
                                                     <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/domino.png" alt="#"></a>
                                                         <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge rent">Rent</span>
+                                                        <span class="flat-badge sale">선착순 3명</span>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Books & Magazine</a>
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
                                                         <h3 class="title">
-                                                            <a href="item-details.html">Story Book</a>
+                                                            <a href="item-details.html">도미노피자</a>
                                                         </h3>
+                                                        <p style="color:black;">배달비 아까우신분 ㄱㄱ</p>
                                                         <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>New York, USA</a></p>
+                                                                </i>서울특별시 강북구</a></p>
                                                         <ul class="info">
-                                                            <li class="price">$120.00</li>
-                                                            <li class="like"><a href="javascript:void(0)"><i
-                                                                        class="lni lni-heart"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <!-- End Single Item -->
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-12">
-                                                <!-- Start Single Item -->
-                                                <div class="single-item-grid">
-                                                    <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
-                                                        <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge sale">Sale</span>
-                                                    </div>
-                                                    <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Electronic</a>
-                                                        <h3 class="title">
-                                                            <a href="item-details.html">Cctv camera</a>
-                                                        </h3>
-                                                        <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>Delhi, India</a></p>
-                                                        <ul class="info">
-                                                            <li class="price">$350.00</li>
+                                                            <li class="price">25,000원 ~ 35,000원</li>
                                                             <li class="like"><a href="javascript:void(0)"><i class="lni lni-heart"></i></a>
                                                             </li>
                                                         </ul>
@@ -441,19 +424,20 @@
                                                 <!-- Start Single Item -->
                                                 <div class="single-item-grid">
                                                     <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/gosu.jpg" alt="#"></a>
                                                         <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge sale">Sale</span>
+                                                        <span class="flat-badge sale">선착순 2명</span>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Mobile</a>
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
                                                         <h3 class="title">
-                                                            <a href="item-details.html">Apple Iphone X</a>
+                                                            <a href="item-details.html">싸움의 고수</a>
                                                         </h3>
+                                                        <p style="color:black;">배달료 개손핸데 싸움의 고수 드실분 없나여??</p>
                                                         <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>Boston</a></p>
+                                                                </i>서울특별시 송파구</a></p>
                                                         <ul class="info">
-                                                            <li class="price">$890.00</li>
+                                                            <li class="price">7,000원 ~ 13,000원</li>
                                                             <li class="like"><a href="javascript:void(0)"><i
                                                                         class="lni lni-heart"></i></a>
                                                             </li>
@@ -466,19 +450,20 @@
                                                 <!-- Start Single Item -->
                                                 <div class="single-item-grid">
                                                     <div class="image">
-                                                        <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                        <a href="item-details.html"><img src="../nplit/assets/images/items/kim.jpg" alt="#"></a>
                                                         <i class=" cross-badge lni lni-bolt"></i>
-                                                        <span class="flat-badge sale">Sale</span>
+                                                        <span class="flat-badge sale">선착순 1명</span>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="javascript:void(0)" class="tag">Mobile</a>
+                                                        <a href="javascript:void(0)" class="tag">배달음식</a>
                                                         <h3 class="title">
-                                                            <a href="item-details.html">Samsung Glalaxy S8</a>
+                                                            <a href="item-details.html">김가네</a>
                                                         </h3>
+                                                        <p style="color:black;">라이트한 점심 ㄱㄱ 하실분 구함</p>
                                                         <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                </i>Delaware, USA</a></p>
+                                                                </i>경기도 용인시</a></p>
                                                         <ul class="info">
-                                                            <li class="price">$299.00</li>
+                                                            <li class="price">9,000원 ~ 19,000원</li>
                                                             <li class="like"><a href="javascript:void(0)"><i class="lni lni-heart"></i></a>
                                                             </li>
                                                         </ul>
@@ -512,22 +497,23 @@
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-5 col-md-7 col-12">
                                                             <div class="image">
-                                                                <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                                <a href="item-details.html"><img src="../nplit/assets/images/items/kyochon.jpg" alt="#"></a>
                                                                 <i class=" cross-badge lni lni-bolt"></i>
-                                                                <span class="flat-badge sale">Sale</span>
+                                                                <span class="flat-badge sale">선착순 2명</span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 col-md-5 col-12">
                                                             <div class="content">
-                                                                <a href="javascript:void(0)" class="tag">Others</a>
+                                                                <a href="javascript:void(0)" class="tag">배달음식</a>
                                                                 <h3 class="title">
-                                                                    <a href="item-details.html">Travel Kit</a>
+                                                                    <a href="item-details.html">교촌치킨</a>
                                                                 </h3>
+                                                                <p>교촌치킨 배달 같이 시키실분 구합니당~~</p>
                                                                 <p class="location"><a href="javascript:void(0)"><i
                                                                             class="lni lni-map-marker">
-                                                                        </i>San Francisco</a></p>
+                                                                        </i>경기도 수원시</a></p>
                                                                 <ul class="info">
-                                                                    <li class="price">$580.00</li>
+                                                                    <li class="price">20,000원 ~ 30,000원</li>
                                                                     <li class="like"><a href="javascript:void(0)"><i
                                                                                 class="lni lni-heart"></i></a>
                                                                     </li>
@@ -544,22 +530,23 @@
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-5 col-md-7 col-12">
                                                             <div class="image">
-                                                                <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                                <a href="item-details.html"><img src="../nplit/assets/images/items/moms_touch.jpg" alt="#"></a>
                                                                 <i class=" cross-badge lni lni-bolt"></i>
-                                                                <span class="flat-badge sale">Sale</span>
+                                                                <span class="flat-badge sale">선착순 3명</span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 col-md-5 col-12">
                                                             <div class="content">
-                                                                <a href="javascript:void(0)" class="tag">Electronic</a>
+                                                                <a href="javascript:void(0)" class="tag">배달음식</a>
                                                                 <h3 class="title">
-                                                                    <a href="item-details.html">Nikon DSLR Camera</a>
+                                                                    <a href="item-details.html">맘스터치</a>
                                                                 </h3>
+                                                                <p>맘스터치 단품으로 주문하실 분~!~!</p>
                                                                 <p class="location"><a href="javascript:void(0)"><i
                                                                             class="lni lni-map-marker">
-                                                                        </i>Alaska, USA</a></p>
+                                                                        </i>서울특별시 강동구</a></p>
                                                                 <ul class="info">
-                                                                    <li class="price">$560.00</li>
+                                                                    <li class="price">10,000원 ~ 15,000원</li>
                                                                     <li class="like"><a href="javascript:void(0)"><i
                                                                                 class="lni lni-heart"></i></a>
                                                                     </li>
@@ -576,22 +563,22 @@
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-5 col-md-7 col-12">
                                                             <div class="image">
-                                                                <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                                <a href="item-details.html"><img src="../nplit/assets/images/items/dduk.png" alt="#"></a>
                                                                 <i class=" cross-badge lni lni-bolt"></i>
-                                                                <span class="flat-badge sale">Sale</span>
+                                                                <span class="flat-badge sale">선착순 2명</span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 col-md-5 col-12">
                                                             <div class="content">
-                                                                <a href="javascript:void(0)" class="tag">Mobile</a>
+                                                                <a href="javascript:void(0)" class="tag">배달음식</a>
                                                                 <h3 class="title">
-                                                                    <a href="item-details.html">Apple Iphone X</a>
+                                                                    <a href="item-details.html">엽기떡볶이</a>
                                                                 </h3>
                                                                 <p class="location"><a href="javascript:void(0)"><i
                                                                             class="lni lni-map-marker">
-                                                                        </i>Boston</a></p>
+                                                                        </i>서울특별시 중량구</a></p>
                                                                 <ul class="info">
-                                                                    <li class="price">$890.00</li>
+                                                                    <li class="price">14,000원 ~ 17,000원</li>
                                                                     <li class="like"><a href="javascript:void(0)"><i
                                                                                 class="lni lni-heart"></i></a>
                                                                     </li>
@@ -608,22 +595,23 @@
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-5 col-md-7 col-12">
                                                             <div class="image">
-                                                                <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                                <a href="item-details.html"><img src="../nplit/assets/images/items/bon.jpg" alt="#"></a>
                                                                 <i class=" cross-badge lni lni-bolt"></i>
-                                                                <span class="flat-badge sale">Sale</span>
+                                                                <span class="flat-badge rent">4명 남음</span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 col-md-5 col-12">
                                                             <div class="content">
-                                                                <a href="javascript:void(0)" class="tag">Furniture</a>
+                                                                <a href="javascript:void(0)" class="tag">배달음식</a>
                                                                 <h3 class="title">
-                                                                    <a href="item-details.html">Poster Paint</a>
+                                                                    <a href="item-details.html">본죽</a>
                                                                 </h3>
+                                                                <p>용산역 근처 본죽 배달해서 드실분?</p>
                                                                 <p class="location"><a href="javascript:void(0)"><i
                                                                             class="lni lni-map-marker">
-                                                                        </i>Las Vegas</a></p>
+                                                                        </i>서울특별시 용산구</a></p>
                                                                 <ul class="info">
-                                                                    <li class="price">$85.00</li>
+                                                                    <li class="price">11,000원 ~ 17,000원</li>
                                                                     <li class="like"><a href="javascript:void(0)"><i
                                                                                 class="lni lni-heart"></i></a>
                                                                     </li>
@@ -640,21 +628,22 @@
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-5 col-md-7 col-12">
                                                             <div class="image">
-                                                                <a href="item-details.html"><img src="https://via.placeholder.com/600x400" alt="#"></a>
+                                                                <a href="item-details.html"><img src="../nplit/assets/images/items/bhc.jpg" alt="#"></a>
                                                                 <i class=" cross-badge lni lni-bolt"></i>
-                                                                <span class="flat-badge rent">Rent</span>
+                                                                <span class="flat-badge rent">4명 남음</span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 col-md-5 col-12">
                                                             <div class="content">
-                                                                <a href="javascript:void(0)" class="tag">Books & Magazine</a>
+                                                                <a href="javascript:void(0)" class="tag">배달음식</a>
                                                                 <h3 class="title">
-                                                                    <a href="item-details.html">Story Book</a>
+                                                                    <a href="item-details.html">BHC 치킨</a>
                                                                 </h3>
+                                                                <p>치킨 시키는데 배달료 아까우신분?? 들오셈</p>
                                                                 <p class="location"><a href="javascript:void(0)"><i class="lni lni-map-marker">
-                                                                        </i>New York, USA</a></p>
+                                                                        </i>경기도 안산시</a></p>
                                                                 <ul class="info">
-                                                                    <li class="price">$120.00</li>
+                                                                    <li class="price">20,000원 ~ 25,000원</li>
                                                                     <li class="like"><a href="javascript:void(0)"><i
                                                                                 class="lni lni-heart"></i></a>
                                                                     </li>
@@ -690,152 +679,73 @@
             </div>
         </div>
     </section>
-    <!-- End Category -->
+    <!-- End Items Listing Grid -->
 
-    <!-- Start Newsletter Area -->
-    <div class="newsletter section">
-        <div class="container">
-            <div class="inner-content">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="title">
-                            <i class="lni lni-alarm"></i>
-                            <h2>Newsletter</h2>
-                            <p>We don't send spam so don't worry.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="form">
-                            <form action="#" method="get" target="_blank" class="newsletter-form">
-                                <input name="EMAIL" placeholder="Your email address" type="email">
-                                <div class="button">
-                                    <button class="btn">Subscribe<span class="dir-part"></span></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Newsletter Area -->
-
+    
     <!-- Start Footer Area -->
     <footer class="footer">
-        <!-- Start Footer Top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <!-- Single Widget -->
-                        <div class="single-footer mobile-app">
-                            <h3>Mobile Apps</h3>
-                            <div class="app-button">
-                                <a href="javascript:void(0)" class="btn">
-                                    <i class="lni lni-play-store"></i>
-                                    <span class="text">
-                                        <span class="small-text">Get It On</span>
-                                        Google Play
-                                    </span>
-                                </a>
-                                <a href="javascript:void(0)" class="btn">
-                                    <i class="lni lni-apple"></i>
-                                    <span class="text">
-                                        <span class="small-text">Get It On</span>
-                                        App Store
-                                    </span>
-                                </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Single Widget -->
+                    <div class="single-footer mobile-app">
+                        <a><img src="assets/images/footer/footer_nplitlogo.svg" alt="Logo" ;
+                                style="width:300px; height:300px"></a>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-md-4" style="display:inline;">
+                    <div class="single-footer f-contact">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>서울 강남구 강남대로94길 20, <br> 삼오빌딩(5층 ~ 9층)</li>
+                            <li>문의 : 02-3486-9600 | 팩스 : 02.6007.1298 <br> 사업자등록번호 : 214-85-24928</li>
+                            <li>(주)비트컴퓨터 강남본원 대표이사 : 허원준</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <!-- Single Widget -->
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="inner">
+                                <!-- <div class="row"> -->
+                                <!-- <div class="col-6"> -->
+                                <div class="content">
+                                    <div class="content-top">
+                                        <p>통신판매업 신고번호 : 제 서초-00098호 <br> 개인정보보호관리책임자 : 박진형</p>
+                                    </div>
+                                    <p>이용약관 | 개인정보취급방침 | 위치기반서비스 이용약관</p>
+                                    <ul class="footer-social">
+                                        <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+                                        </li>
+                                        <li><a href="javascript:void(0)"><i
+                                                    class="lni lni-twitter-original"></i></a>
+                                        </li>
+                                        <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a>
+                                        </li>
+                                        <li><a href="javascript:void(0)"><i
+                                                    class="lni lni-linkedin-original"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- <i class="fas fa-link"></i> -->
+
+                                </div>
+                                <!-- </div> -->
+                                <!-- </div> -->
                             </div>
                         </div>
-                        <!-- End Single Widget -->
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <!-- Single Widget -->
-                        <div class="single-footer f-link">
-                            <h3>Locations</h3>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <ul>
-                                        <li><a href="javascript:void(0)">Chicago</a></li>
-                                        <li><a href="javascript:void(0)">New York City</a></li>
-                                        <li><a href="javascript:void(0)">San Francisco</a></li>
-                                        <li><a href="javascript:void(0)">Washington</a></li>
-                                        <li><a href="javascript:void(0)">Boston</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <ul>
-                                        <li><a href="javascript:void(0)">Los Angeles</a></li>
-                                        <li><a href="javascript:void(0)">Seattle</a></li>
-                                        <li><a href="javascript:void(0)">Las Vegas</a></li>
-                                        <li><a href="javascript:void(0)">San Diego</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Widget -->
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <!-- Single Widget -->
-                        <div class="single-footer f-link">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="javascript:void(0)">About Us</a></li>
-                                <li><a href="javascript:void(0)">How It's Works</a></li>
-                                <li><a href="javascript:void(0)">Login</a></li>
-                                <li><a href="javascript:void(0)">Signup</a></li>
-                                <li><a href="javascript:void(0)">Help & Support</a></li>
-                            </ul>
-                        </div>
-                        <!-- End Single Widget -->
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <!-- Single Widget -->
-                        <div class="single-footer f-contact">
-                            <h3>Contact</h3>
-                            <ul>
-                                <li>23 New Design Str, Lorem Upsum 10<br> Hudson Yards, USA</li>
-                                <li>Tel. +(123) 1800-567-8990 <br> Mail. support@classigrids.com</li>
-                            </ul>
-                        </div>
+
                         <!-- End Single Widget -->
                     </div>
                 </div>
             </div>
         </div>
-        <!--/ End Footer Middle -->
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content">
-                                <ul class="footer-bottom-links">
-                                    <li><a href="javascript:void(0)">Terms of use</a></li>
-                                    <li><a href="javascript:void(0)"> Privacy Policy</a></li>
-                                    <li><a href="javascript:void(0)">Advanced Search</a></li>
-                                    <li><a href="javascript:void(0)">Site Map</a></li>
-                                    <li><a href="javascript:void(0)">Information</a></li>
-                                </ul>
-                                <p class="copyright-text">Designed and Developed by <a href="https://graygrids.com/"
-                                        rel="nofollow" target="_blank">GrayGrids</a>
-                                </p>
-                                <ul class="footer-social">
-                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Middle -->
-    </footer>
-    <!--/ End Footer Area -->
+</footer>
+<!--/ End Footer Area -->
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top btn-hover">
