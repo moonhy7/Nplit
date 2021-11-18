@@ -2010,7 +2010,7 @@ ol {
      Area CSS
 ========================================*/
 .-area {
-  background-image: url("file:///C:/Dev211/nplit/assets/images/a.svg");
+  background-image: url("file:///C:/nplit/assets/images/main_img.svg");
   opacity: 1;
   background-size: cover;
   background-position: center center;
@@ -2022,7 +2022,7 @@ ol {
 }
 
 .hero-area {
-  background-image: url("file:///C:/Dev211/nplit/assets/images/a.svg");
+  background-image: url("file:///C:/nplit/assets/images/main_img.svg");
   opacity: 1;
   background-size: cover;
   background-position: center center;
