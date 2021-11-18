@@ -7,7 +7,7 @@
     <title>Messages - ClassiGrids Classified Ads and Listing Website Template</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/n_favicon.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- Web Font -->
@@ -49,7 +49,99 @@
         display: inline-block;
     }
     
-        
+        /*유미*/
+
+        a.chat-button {
+        width: 150px;
+        }
+        .fold_btn {
+        position: absolute;
+        right: 0;
+        width: 100px;
+        height: 25px;
+        color: #926a9d;
+        font-size: 15px;
+        background-color: #fff;
+        border: 1px solid #926a9d;
+        transition: 0.5s;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: center;
+        line-height: 25px;
+        cursor: pointer;
+        margin-top: 10px;
+        float: right;
+        margin-right: 2rem;
+        z-index: 99;
+        /* border-top: none; */
+        }
+
+        .detaile-button {
+        margin-top: -10px;
+        float: right;
+        }
+        .fold {
+        /* border-bottom: 1px solid #ccc; */
+        margin-top: -30px;
+        clear: both;
+        }
+        .chat-box {
+        position: relative;
+        overflow: hidden;
+        }
+        .detailebox {
+        top: -100vh;
+        background-color: rgba(255, 255, 255, 1);
+        position: absolute;
+        z-index: 2;
+        width: 98%;
+        transition: top 0.6s ease-in-out;
+        }
+        .detaile {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 1);
+        top: 0px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 10px;
+        }
+
+        .test {
+        display: none;
+        z-index: 3;
+        }
+        .hide_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 100px 0 20px;
+        }
+        #detaile_content {
+        display: flex;
+        padding-bottom: 20px;
+        /* border-bottom: 1px solid #ccc; */
+        }
+
+        #add_bt:checked ~ .detailebox {
+        /* display: block; */
+        top: 0;
+        transition: top 0.3s ease-in-out;
+        }
+        .fold_btn::before {
+        content: "더보기";
+        }
+
+        #add_bt:checked + label::before {
+        /* margin-top: -10px; */
+        content: "접기";
+        }
+
+        .messages-body {
+        overflow: hidden;
+        clear: both;
+        }
+        /*end 유미*/
 
 
         
@@ -164,13 +256,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="breadcrumbs-content">
-                        <h1 class="page-title">채팅 목록</h1>
+                        <h1 class="page-title">Sharing</h1>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <ul class="breadcrumb-nav">
                         <li><a href="1.index.html">Home</a></li>
-                        <li>채팅</li>
+                        <li>Chating</li>
                     </ul>
                 </div>
             </div>
@@ -212,8 +304,8 @@
                                                             <div class="image" style="height: 60px; width: 60px; ">
                                                                 <img src="assets/images/profile/pro2.png" alt="#" style="height: 25px; width: 25px; display: inline;">
                                                                 <img src="assets/images/profile/pro3.png" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                                <img src="assets/images/profile/1.ha-yoon.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                                <img src="assets/images/profile/3.jin-hyoeng.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                                <img src="assets/images/profile/moon.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                                <img src="assets/images/profile/secretjin.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
                                                             </div>
                                                         
                                                         
@@ -233,9 +325,9 @@
                                                   <a href="javascript:void(0)">
                                                
                                                     <div class="image" style="height: 60px; width: 60px; ">
-                                                        <img src="assets/images/profile/5.chul-woo.jpg" alt="#" style="height: 25px; width: 25px; display: inline; ">
+                                                        <img src="assets/images/profile/KakaoTalk_20211118_162542283_07.jpg" alt="#" style="height: 25px; width: 25px; display: inline; ">
                                                         <img src="assets/images/profile/yeop.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                        <img src="assets/images/profile/6.yu-mi.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                        <img src="assets/images/profile/youme.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
                                                     </div>
                                                 
                                                     
@@ -271,10 +363,10 @@
                                                 <li>
                                                     <a href="javascript:void(0)">
                                                         <div class="image" style="height: 60px; width: 60px; ">
-                                                            <img src="assets/images/profile/3.jin-hyoeng.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                            <img src="assets/images/profile/1.ha-yoon.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                            <img src="assets/images/profile/4.won-jun.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                            <img src="assets/images/profile//2.ye-jin.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/profile/jinhyong.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/profile/hayoon.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/profile/chulu.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/profile/youme.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
                                                            
                                                         </div>
                                                         <span class="username" style="display:inline;">Iphone 11 Pro Max 공동 구매</span>
@@ -290,16 +382,16 @@
                                                 <li>
                                                     <a href="javascript:void(0)">
                                                         <div class="image" style="height: 60px; width: 60px; ">
-                                                            <img src="assets/images/profile/2.ye-jin.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                            <img src="assets/images/profile/4.won-jun.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                            <img src="assets/images/profile/3.jin-hyoeng.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/profile/yejin.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/profile/wonjun.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/profile/secretjin.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
                                                             <img src="assets/images/profile/pro3.png" alt="#" style="height: 25px; width: 25px; display: inline;">
                                                         </div>
                                                         <span class="username" style="display:inline;">허원준</span>
                                                         <span style="color:#ccc; font-size:8px;">23분전</span>
                                                         <span class="short-message">정말 필요했는데 ㅜㅜㅜ</span>
                                                         <img class="unseen-message"
-                                                            src="assets/images/items/book.jpg"
+                                                            src="assets/images/messages/iphone.JPG"
                                                             style="width:3rem; height:3rem;">
                                                     </a>
                                                 </li>
@@ -308,16 +400,16 @@
                                                 <li>
                                                     <a href="javascript:void(0)">
                                                         <div class="image" style="height: 60px; width: 60px; ">
-                                                            <img src="assets/images/profile/1.ha-yoon.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                            <img src="assets/images/profile/3.jin-hyoeng.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                            <img src="assets/images/profile/5.chul-woo.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
-                                                            <img src="assets/images/profile/6.yu-mi.jpg" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/messages/06.png" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/messages/06.png" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/messages/06.png" alt="#" style="height: 25px; width: 25px; display: inline;">
+                                                            <img src="assets/images/messages/06.png" alt="#" style="height: 25px; width: 25px; display: inline;">
                                                         </div>
                                                         <span class="username" style="display:inline;">심유미</span>
                                                         <span style="color:#ccc; font-size:8px;">3시간전</span>
                                                         <span class="short-message">감사합니당</span>
                                                         <img class="unseen-message"
-                                                            src="assets/images/items/shoes.jpg"
+                                                            src="assets/images/messages/dduck.JPG"
                                                             style="width:3rem; height:3rem;">
                                                     </a>
                                                 </li>
@@ -331,8 +423,7 @@
                                     <input type="checkbox" class="test" id="add_bt">
                                     <label class="fold_btn" for="add_bt"></label>
                                     <div class="detailebox">
-                                        <input type="button" onclick="window.open('7.chatting_registered_spot.html');" id="bestspot" value="거래장소 추천" class="detaile_map_btn"></button>
-                                                <nav class="detaile">
+                                        <nav class="detaile">
                                             <div class="hide_menu">
                                                 <div id="detaile_content">
                                                     <img src="assets/images/messages/cleaner.JPG"
@@ -345,7 +436,6 @@
                                                         <p>11900원 </p>
                                                     </div>
                                                 </div>
-                                                
                                             </div>
                                         </nav>
                                     </div>
@@ -353,40 +443,29 @@
                                         <!-- Start Chat List -->
                                         <div class="chat-list">
                                             <ul class="single-chat-head">
-                                                <li class="left" style="padding-left: 50px; padding-top: 50px;">
-                                                    <br>
-                                                    <img src="assets/images/profile/1.ha-yoon.jpg" alt="#">
-                                                    <p class="text" style="width: 45%;margin-left: 10px;  padding: 10px; background-color: #eee; display: inline;">
-                                                        세탁조 클리너 이거 좋은건가요?
+                                                <li class="left">
+                                                    <img src="https://via.placeholder.com/300x300" alt="#">
+                                                    <p class="text">세탁조 클리너 이거 좋은건가요?
+                                                        <span class="time">9:51 AM</span>
                                                     </p>
-                                                    <span class="time" style="color: #926a9d; margin-left: 20px;">9:51 AM</span>
                                                 </li>
-
-                                                <li class="right" style="padding-right: 50px; padding-top: 10px;">
-                                                    <br>
-                                                    <span style="padding-top: 40px;"><img src="assets/images/profile/4.won-jun.jpg"  alt="#"></span>
-                                                    <p class="text" style="width: 60%; padding: 10px; float: right; margin-right: 10px;  background-color: #eee; display: inline;">
-                                                        네 하윤님만 참여하면 지금 바로 더 싸게살 수있어요!
+                                                <li class="right">
+                                                    <img src="https://via.placeholder.com/300x300" alt="#">
+                                                    <p class="text">네 하윤님만 참여하면 지금 바로 더 싸게살 수있어요!
+                                                        <span class="time">11:00 AM</span>
                                                     </p>
-                                                    <span class="time" style="color: #926a9d; margin-right: 20px; margin-top: 10px; float: right;">11:00 AM</span>
-                                                </li>       
-
-                                                <li class="left" style="padding-left: 50px; margin-top: 10px; padding-top: 10px;">
-                                                    <br>
-                                                    <span style="padding-top: 40px;"><img src="assets/images/profile/5.chul-woo.jpg" alt="#"></span>
-                                                    <p class="text" style="padding: 10px; width: 45%;margin-left: 20px;  background-color: #eee; display: inline;">
-                                                        쉐어링 방 5분만에 사람 다찼네요
-                                                    </p>
-                                                    <span class="time" style="color: #926a9d; margin-left: 20px;">11:30 AM</span>
                                                 </li>
-
-                                                <li class="right" style="padding-right: 50px; padding-top: 10px;">
-                                                    <br>
-                                                    <span style="padding-top: 40px;"><img src="assets/images/profile/2.ye-jin.jpg"  alt="#"></span>
-                                                    <p class="text" style="padding: 10px; width: 30%; float: right; margin-right: 10px;  background-color: #eee; display: inline;">
-                                                        바로 구매진행할게요!
+                                                <li class="left">
+                                                    <img src="https://via.placeholder.com/300x300" alt="#">
+                                                    <p class="text">쉐어링 방 5분만에 사람 다찼네요 
+                                                        <span class="time">12:00 AM</span>
                                                     </p>
-                                                    <span class="time" style="color: #926a9d; margin-right: 20px; margin-top: 10px;  float: right;">11:55 AM</span>
+                                                </li>
+                                                <li class="right">
+                                                    <img src="https://via.placeholder.com/300x300" alt="#">
+                                                    <p class="text">바로 구매진행할게요!
+                                                        <span class="time">12:25 AM</span>
+                                                    </p>
                                                 </li>
                                             </ul>
                                             <!-- 모달 설정 -->
@@ -431,7 +510,7 @@
                                                     <li><a href="#" id="fileupload" type="file"><i class="lni lni-image"></i></a></li>
                                                     <input type="file" id="fileup" style="display: none;">
                                                 </ul>
-                                                <input name="reply" type="text" placeholder="메시지를 입력해주세요." class="test">
+                                                <input name="reply" type="text" style="width: 80%;" placeholder="Type your message here...">
                                                 <button class="reply-btn"><img src="assets/images/messages/send.svg"
                                                         alt="#"></button>
                                             </div>
