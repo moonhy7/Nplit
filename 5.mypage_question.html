@@ -132,13 +132,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="breadcrumbs-content">
-                        <h1 class="page-title">Contact Us</h1>
+                        <h1 class="page-title">1:1 문의하기</h1>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <ul class="breadcrumb-nav">
-                        <li><a href="1.index.html">Home</a></li>
-                        <li>Contact</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li>1:1 문의하기</li>
                     </ul>
                 </div>
             </div>
@@ -146,31 +146,28 @@
     </div>
     <!-- End Breadcrumbs -->
 
-    <!-- Start Contact Area -->
+    <!-- 1:1 문의하기 진형 수정 -->
     <section id="contact-us" class="contact-us section">
         <div class="container">
             <div class="contact-head wow fadeInUp" data-wow-delay=".4s">
                 <div class="row">
                     <div class="col-lg-5 col-12">
                         <div class="single-head">
-                            <div class="contant-inner-title">
-                                <h2>Our Contacts & Location</h2>
-                                <p>Business consulting excepteur sint occaecat cupidatat consulting non proident.</p>
-                            </div>
+                            
                             <div class="single-info">
-                                <h3>Opening hours</h3>
+                                <h3>문의 시간</h3>
                                 <ul>
-                                    <li>Daily: 9.30 AM–6.00 PM</li>
+                                    <li>영업시간: Daily 09.00 AM–6.00 PM</li>
                                     <li>Sunday & Holidays: Closed</li>
                                 </ul>
                             </div>
                             <div class="single-info">
-                                <h3>Contact info</h3>
+                                <h3>고객센터 INFO</h3>
                                 <ul>
-                                    <li>77408 Satterfield Motorway Suite</li>
-                                    <li>469 New Antonetta, BC K3L6P6</li>
+                                    <li>서울 강남구 강남대로94길 20, <br> 삼오빌딩(5층 ~ 9층)</li><br>
+                                    <li><a href="tel:(617) 495-9400-326">문의 : 02-3486-9600 | 팩스 : 02.6007.1298 <br> 사업자등록번호 : 214-85-24928
+                                    </a></li><br>
                                     <li><a href="mailto:info@yourwebsite.com">example@info.com</a></li>
-                                    <li><a href="tel:(617) 495-9400-326">(617) 495-9400-326</a></li>
                                 </ul>
                             </div>
                             <div class="single-info contact-social">
@@ -187,43 +184,66 @@
                     <div class="col-lg-7 col-12">
                         <div class="form-main">
                             <div class="form-title">
-                                <h2>Get in Touch</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form.</p>
+                                <h2>1:1 문의하기</h2>
+                                <p>※ 문의내용 ※ </p>
+                                <p>문의 유형을 먼저 선택해주세요.</p>
                             </div>
                             <form class="form" method="post" action="assets/mail/mail.php">
                                 <div class="row">
+                                    <div class="col-12 ">
+                                        <div class="form-group">
+                                            <div class="search-form wow fadeInUp" data-wow-delay=".7s" style="margin-top: 0px; padding: 0px;">
+                                                    <div class="search-input">
+                                                        <label for="category"><i class="lni lni-grid-alt theme-color"></i></label>
+                                                        <select name="category" id="category">
+                                                            <option value="none" selected disabled>문의 유형을 선택해주세요.</option>
+                                                            <option value="none">가입문의</option>
+                                                            <option value="none">상품관련</option>
+                                                            <option value="none">신고</option>
+                                                            <option value="none">이벤트 관련</option>
+                                                            <option value="none">기타 문의사항</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="col-lg-6 col-12">
                                         <div class="form-group">
-                                            <input name="name" type="text" placeholder="Your Name" required="required">
+                                            <input name="member_id" type="text" placeholder="아이디" required="required">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="form-group">
-                                            <input name="subject" type="text" placeholder="Your Subject"
+                                            <input name="password" type="password" placeholder="비밀번호" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input name="email" type="email" placeholder="이메일"
                                                 required="required">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-12">
                                         <div class="form-group">
-                                            <input name="email" type="email" placeholder="Your Email"
-                                                required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12">
-                                        <div class="form-group">
-                                            <input name="phone" type="text" placeholder="Your Phone"
+                                            <input name="phone" type="text" placeholder="연락처"
                                                 required="required">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group message">
-                                            <textarea name="message" placeholder="Your Message"></textarea>
+                                            <textarea name="message" placeholder="문의내용"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group upload-image">
+                                            <label>첨부 파일 추가</label>
+                                            <input name="profile-image" type="file" style="font-size: 14px; padding: 10px; line-height: 20px;">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group button">
-                                            <button type="submit" class="btn ">Submit Message</button>
+                                            <button type="submit" class="btn " style="float: right;">문의하기</button>
                                         </div>
                                     </div>
                                 </div>
@@ -234,36 +254,9 @@
             </div>
         </div>
     </section>
-    <!--/ End Contact Area -->
+    <!--/ 1:1 문의하기 END -->
 
-    <!-- Start Google-map Area -->
-    <div class="map-section">
-        <div class="map-container">
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                        href="https://123movies-to.com">123movies old site</a>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 500px;
-                            width: 100%;
-                        }
-
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 500px;
-                            width: 100%;
-                        }
-                    </style>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Google-map Area -->
+    
 
     <!-- Start Footer Area -->
     <footer class="footer">

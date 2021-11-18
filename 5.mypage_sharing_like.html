@@ -76,13 +76,13 @@
                                         <a href="2.category_all.html" aria-label="Toggle navigation">카테고리</a>
                                         <ul class="sub-menu mega-menu collapse" id="submenu-1-4">
                                             <!-- <li class="mega-menu-title">Dashboard</li> -->
-                                            <li class="nav-item"><a href="2.category_cloth.html">패션/잡화</a></li>
-                                            <li class="nav-item"><a href="2.category_electronic.html">가전/디지털</a></li>
+                                            <li class="nav-item"><a href="2.category_cloth.html">의류</a></li>
+                                            <li class="nav-item"><a href="2.category_electronic.html">전자기기</a></li>
                                             <li class="nav-item"><a href="2.category_life.html">라이프</a>
                                             <li class="nav-item"><a href="2.category_food.html">배달음식</a></li>
-                                            <li class="nav-item"><a href="2.category_house.html">홈 쉐어링</a></li></li>
-                                            <li class="nav-item"><a href="2.category_ingredient.html">식품</a></li>
-                                            <li class="nav-item"><a href="2.category_streaming.html">구독서비스</a></li>
+                                            <li class="nav-item"><a href="2.category_house.html">집</a></li></li>
+                                            <li class="nav-item"><a href="2.category_ingredient.html">식재료</a></li>
+                                            <li class="nav-item"><a href="2.category_streaming.html">스트리밍</a></li>
                                             <li class="nav-item"><a href="2.category_etc.html">기타</a></li>
                                         </ul>
                                     </li>
@@ -254,7 +254,7 @@
                                         <div class="col-lg-3 col-md-3 col-12 align-right">
                                             <ul class="action-btn">
                                                 <li><a href="3.sharing_details.html"><i class="lni lni-eye"></i></a></li>
-                                                <li><a href="javascript:void(0)"><i class="lni lni-trash"></i></a></li>
+                                                <li><a href="javascript:void(0)" onclick="dellike();"><i class="lni lni-trash"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -268,7 +268,7 @@
                                                 <img src="C:\Nplit\assets\images\profile\NETFLIX.jpg" alt="#">
                                                 <div class="content">
                                                     <h3 class="title"><a href="javascript:void(0)">넷플릭스 같이 구독하실분!</a></h3>
-                                                    <span class="price">총 13900원</span>
+                                                    <span class="price">총 13,900원</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -281,7 +281,7 @@
                                         <div class="col-lg-3 col-md-3 col-12 align-right">
                                             <ul class="action-btn">
                                                 <li><a href="C:/nplit/item-details.html"><i class="lni lni-eye"></i></a></li>
-                                                <li><a href="javascript:void(0)"><i class="lni lni-trash"></i></a></li>
+                                                <li><a href="javascript:void(0)" onclick="dellike();"><i class="lni lni-trash"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -295,7 +295,7 @@
                                                 <img src="C:\Nplit\assets\images\profile\yeop.jpg" alt="#">
                                                 <div class="content">
                                                     <h3 class="title"><a href="javascript:void(0)">오늘 7시 엽떡먹을분(배송비 분할)  </a></h3>
-                                                    <span class="price">총 3500원</span>
+                                                    <span class="price">총 3,500원</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -308,7 +308,7 @@
                                         <div class="col-lg-3 col-md-3 col-12 align-right">
                                             <ul class="action-btn">
                                                 <li><a href="C:/nplit/item-details.html"><i class="lni lni-eye"></i></a></li>
-                                                <li><a href="javascript:void(0)"><i class="lni lni-trash"></i></a></li>
+                                                <li><a href="javascript:void(0)" onclick="dellike();"><i class="lni lni-trash"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -322,7 +322,7 @@
                                                 <img src="C:\Nplit\assets\images\profile\airmax.jpg" alt="#">
                                                 <div class="content">
                                                     <h3 class="title"><a href="javascript:void(0)">나이키 에어맥스프로 신발 공구하실분</a></h3>
-                                                    <span class="price">총 350000원</span>
+                                                    <span class="price">총 350,000원</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -335,7 +335,7 @@
                                         <div class="col-lg-3 col-md-3 col-12 align-right">
                                             <ul class="action-btn">
                                                 <li><a href="C:/nplit/item-details.html"><i class="lni lni-eye"></i></a></li>
-                                                <li><a href="javascript:void(0)"><i class="lni lni-trash"></i></a></li>
+                                                <li><a href="javascript:void(0)" onclick="dellike();"><i class="lni lni-trash"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -441,6 +441,21 @@
     <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+
+        function dellike(){
+                
+                if(confirm("찜을 취소하시겠습니까?")){
+            
+                    location.href = "#";
+                    return true;
+                } else {
+                    return false;
+                }
+                }
+            </script>
 </body>
 
 </html>
