@@ -4,7 +4,7 @@ Index Of css
 01. Veriables CSS
 02. Normalize CSS
 03. Header CSS
-04. Hero CSS
+04.  CSS
 05. About CSS
 06. Achievement CSS
 07. Testimonial CSS
@@ -109,7 +109,7 @@ a.chat-button {
   margin-right: 4rem;
   /* border-top: none; */
 }
-.detaile-button {
+.detail-button {
   float: right;
 }
 .fold {
@@ -130,7 +130,7 @@ a.chat-button {
   overflow: hidden;
   transition: all 0.7s linear;
 }
-#detaile_content {
+#detail_content {
   display: flex;
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
@@ -2007,10 +2007,23 @@ ol {
      End Header CSS
   ========================================*/
 /*======================================
-    Hero Area CSS
+     Area CSS
 ========================================*/
+.-area {
+  background-image: url("file:///C:/Dev211/nplit/assets/images/a.svg");
+  opacity: 1;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 2;
+  padding-top: 250px;
+  padding-bottom: 300px;
+  z-index: 2;
+}
+
 .hero-area {
-  background-image: url("https://via.placeholder.com/2100x1280");
+  background-image: url("file:///C:/Dev211/nplit/assets/images/a.svg");
+  opacity: 1;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2022,38 +2035,37 @@ ol {
 
 .hero-area.overlay::before {
   z-index: -1;
-  background: #081828;
-  opacity: 0.9;
+  background: none;
 }
 
-.hero-area.style2 {
+.-area.style2 {
   padding-top: 150px;
   padding-bottom: 100px;
   background-image: url("https://via.placeholder.com/2100x1280");
 }
 
-.hero-area.style2 .hero-text {
+.-area.style2 .-text {
   text-align: left;
 }
 
-.hero-area.style2 .hero-text h2 {
+.-area.style2 .-text h2 {
   font-size: 50px;
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
 
-.hero-area.style2 .hero-text h2::before {
+.-area.style2 .-text h2::before {
   left: 0;
   margin-left: 0;
 }
 
-.hero-area.style3 {
+.-area.style3 {
   padding-top: 250px;
   padding-bottom: 0;
   background-image: url("https://via.placeholder.com/2100x1280");
 }
 
-.hero-area.style3 .search-form {
+.-area.style3 .search-form {
   margin-top: 100px;
   background: #fff;
   border-radius: 6px;
@@ -2066,23 +2078,23 @@ ol {
   transform: translateY(50%);
 }
 
-.hero-area.style3 .search-form .btn:hover {
+.-area.style3 .search-form .btn:hover {
   background-color: #cfb0cf;
   color: #fff;
 }
 
-.hero-area.style3 .categories {
+.-area.style3 .categories {
   padding: 0;
   margin-top: 30px;
 }
 
-.hero-area.style3 .categories .single-cat {
+.-area.style3 .categories .single-cat {
   border: none;
   background-color: #fff;
   padding: 20px 10px;
 }
 
-.hero-area .hero-text h2 {
+.-area .-text h2 {
   color: #fff;
   font-size: 45px;
   line-height: 60px;
@@ -2092,7 +2104,7 @@ ol {
   position: relative;
 }
 
-.hero-area .hero-text h2::before {
+.-area .-text h2::before {
   position: absolute;
   content: "";
   left: 50%;
@@ -2104,14 +2116,14 @@ ol {
   border-radius: 10px;
 }
 
-.hero-area .hero-text p {
+.-area .-text p {
   color: #ddd;
   font-size: 16px;
   font-weight: 400;
   display: block;
 }
 
-/* Hero Search Form */
+/*  Search Form */
 .search-form {
   margin-top: 60px;
   background: #fff3;
@@ -6974,17 +6986,17 @@ blockquote .shape {
   .header .nav-item .sub-menu.mega-menu {
     width: 460px;
   }
-  .hero-area {
+  .-area {
     padding-top: 170px;
     padding-bottom: 200px;
   }
-  .hero-area .hero-text h2 {
+  .-area .-text h2 {
     font-size: 38px;
   }
-  .hero-area .hero-text .button .btn {
+  .-area .-text .button .btn {
     padding: 12px 10px;
   }
-  .hero-area.style2 .hero-text h2 {
+  .-area.style2 .-text h2 {
     font-size: 42px;
   }
 }
@@ -7042,42 +7054,42 @@ blockquote .shape {
   .breadcrumbs .bread-list {
     margin-top: 8px;
   }
-  .hero-area {
+  .-area {
     padding-top: 135px;
     padding-bottom: 185px;
   }
-  .hero-area .hero-text h2 {
+  .-area .-text h2 {
     font-size: 38px;
   }
-  .hero-area .hero-text .button .btn {
+  .-area .-text .button .btn {
     padding: 12px 10px;
   }
-  .hero-area.style2 .hero-text {
+  .-area.style2 .-text {
     text-align: center;
   }
-  .hero-area.style2 .hero-text h2 {
+  .-area.style2 .-text h2 {
     font-size: 38px;
   }
-  .hero-area.style2 .hero-text h2::before {
+  .-area.style2 .-text h2::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .hero-area.style3 {
+  .-area.style3 {
     padding-top: 135px;
   }
-  .hero-area.style3 .hero-text {
+  .-area.style3 .-text {
     text-align: center;
   }
-  .hero-area.style3 .hero-text h2 {
+  .-area.style3 .-text h2 {
     font-size: 38px;
   }
-  .hero-area.style3 .hero-text h2::before {
+  .-area.style3 .-text h2::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .hero-area.style3 .search-form {
+  .-area.style3 .search-form {
     margin-top: 30px;
   }
   .items-tab.custom-padding {
@@ -7359,74 +7371,74 @@ blockquote .shape {
   .breadcrumbs .bread-list {
     margin-top: 8px;
   }
-  .hero-area {
+  .-area {
     padding-top: 135px;
     padding-bottom: 185px;
   }
-  .hero-area .hero-text h2 {
+  .-area .-text h2 {
     font-size: 32px;
     line-height: 38px;
   }
-  .hero-area .hero-text .button .btn {
+  .-area .-text .button .btn {
     padding: 12px 10px;
   }
-  .hero-area .search-form {
+  .-area .search-form {
     margin-top: 30px;
     background: #fff3;
     border-radius: 6px;
     padding: 40px;
   }
-  .hero-area .search-form .search-input {
+  .-area .search-form .search-input {
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
   }
-  .hero-area .search-form .btn {
+  .-area .search-form .btn {
     margin: 0;
   }
-  .hero-area.style2 {
+  .-area.style2 {
     padding-top: 130px;
     padding-bottom: 60px;
   }
-  .hero-area.style2 .hero-text {
+  .-area.style2 .-text {
     text-align: center;
   }
-  .hero-area.style2 .hero-text h2 {
+  .-area.style2 .-text h2 {
     font-size: 32px;
     line-height: 38px;
   }
-  .hero-area.style2 .hero-text h2::before {
+  .-area.style2 .-text h2::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .hero-area.style2 .search-form {
+  .-area.style2 .search-form {
     background-color: #fff;
     padding: 25px;
   }
-  .hero-area.style3 {
+  .-area.style3 {
     padding-top: 135px;
     padding-bottom: 50px;
   }
-  .hero-area.style3 .hero-text {
+  .-area.style3 .-text {
     text-align: center;
   }
-  .hero-area.style3 .hero-text h2 {
+  .-area.style3 .-text h2 {
     font-size: 32px;
     line-height: 38px;
   }
-  .hero-area.style3 .hero-text h2::before {
+  .-area.style3 .-text h2::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .hero-area.style3 .categories {
+  .-area.style3 .categories {
     margin-top: 20px;
   }
-  .hero-area.style3 .categories .single-cat {
+  .-area.style3 .categories .single-cat {
     margin-top: 20px;
   }
-  .hero-area.style3 .search-form {
+  .-area.style3 .search-form {
     margin-top: 30px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
